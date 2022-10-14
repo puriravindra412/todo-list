@@ -1,38 +1,118 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 20px;
+  background-color: rgb(144, 219, 251);
+  font-family: 'Caveat', cursive;
+  margin: 0;
+}
+.container{
+  margin-left:auto;
+  margin-top:5rem;
+  font-size: 40px;
   text-align: center;
+
+}
+.nav{
+  display:flex;
+  margin: 0;
+  padding:8px;
+  height:50px;
+  background-color: white;
+}
+ .logo{
+  font-size: 30px;
+  margin-left: 10px;
+}
+#input-box{
+  margin-top:30px;
+  border:none;
+  border-radius:10px;
+  padding:7px;
+  box-shadow:0 0 15px 4px  rgba(0, 0, 0 ,.2) ;
+
+  width:230px;
+  height: 40px;
+
+  
+}
+#addbutton{
+  height: 40px;
+  margin-left: 5px;
+  border:none;
+  border-radius:10px;
+  width:70px;
+  color:white;
+  box-shadow:0 0 10px 2px  rgba(0, 0, 0 ,.2) ;
+  background-color: rgb(149, 232, 136);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#logo-icon{
+  margin:3px;
+  padding:3px;
+  color:rgb(95, 236, 95);
+font-size:40px;
+}
+.recordlist{
+  width:350px;
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.recordlist ul li{
+  list-style-type: none;
+text-decoration: none;
+
+  font-size: 20px;
+  height: 40px;
+  background-color: white;
+  margin-top:10px;
+  box-shadow:0 0 10px 2px  rgba(0, 0, 0 ,.2) ;
+  border: solid white 1px;
+  border-radius:5px;
+  box-shadow: 0 0 10px 4px rgb(0,0,0,0.1);
+  
+}
+.checkbox{
+  margin-left:0;
+  float:left;
+  padding:5px;
+  margin:5px;
+  margin-right:0;
+  border-radius:8px;
+  width:60px;
+  height:24px;
+}
+.deletebutton{
+  display:flex;
+  float: right;
+  padding:5px;
+  margin:5px;
+  margin-right:10px;
+  border:none;
+  border-radius:8px;
+  width:60px;
+  height:28px;
+  color:white;
+  box-shadow:0 0 10px 2px  rgba(0, 0, 0 ,.2) ;
+  background-color: rgba(246, 79, 79, 0.911);
+}
+.deletebutton:hover{
+  background-color:rgb(191, 191, 191) ;
+  
+  
+}
+#addbutton:hover{
+  background-color:rgb(191, 191, 191) ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
